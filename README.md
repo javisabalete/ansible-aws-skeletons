@@ -16,8 +16,8 @@ All playbooks require export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY before 
         ansible-playbook -i hosts/local playbooks/ec2-sg.yml --tags list-groups
         ansible-playbook -i hosts/local playbooks/ec2-sg.yml --tags delete-group
         ```
-
-        Extra vars are available to override default vars. See var_ec2-sg for possible extra vars.
+        
+     Extra vars are available to override default vars. See var_ec2-sg for possible extra vars.
 
 ### Available Hosts Files
 * local: Hostfile for local_action
