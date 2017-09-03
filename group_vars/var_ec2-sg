@@ -1,0 +1,9 @@
+instance_type: "{{ instance|default('t2.micro') }}"
+security_group: "{{ sg|default('test') }}"
+image: "{{ ami|default('ami-0000000') }}"
+region: eu-west-1
+keypair: 'my key name'
+instance_profile_name: instance_role
+instance_tag_name: "{{ name|default('test') }}"
+instance_tag_type: "{{ type|default('test') }}"
+count: 1
